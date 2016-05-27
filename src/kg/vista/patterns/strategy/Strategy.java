@@ -1,4 +1,4 @@
-package kg.vista.patterns;
+package kg.vista.patterns.strategy;
 
 interface Strategy {
     int execute(int a, int b);
@@ -8,7 +8,7 @@ interface Strategy {
 class ConcreteStrategyAdd implements Strategy {
 
     public int execute(int a, int b) {
-        System.out.println("Called kg.vista.patterns.ConcreteStrategyAdd's execute()");
+        System.out.println("Called kg.vista.patterns.strategy.ConcreteStrategyAdd's execute()");
         return a + b;
     }
 }
@@ -16,7 +16,7 @@ class ConcreteStrategyAdd implements Strategy {
 class ConcreteStrategySubtract implements Strategy {
 
     public int execute(int a, int b) {
-        System.out.println("Called kg.vista.patterns.ConcreteStrategySubtract's execute()");
+        System.out.println("Called kg.vista.patterns.strategy.ConcreteStrategySubtract's execute()");
         return a - b;
     }
 }
@@ -24,7 +24,7 @@ class ConcreteStrategySubtract implements Strategy {
 class ConcreteStrategyMultiply implements Strategy {
 
     public int execute(int a, int b) {
-        System.out.println("Called kg.vista.patterns.ConcreteStrategyMultiply's execute()");
+        System.out.println("Called kg.vista.patterns.strategy.ConcreteStrategyMultiply's execute()");
         return a * b;
     }
 }
